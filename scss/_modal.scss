@@ -1,0 +1,116 @@
+.modal {
+
+    &-body {
+        background-color: white;
+    }
+
+    &-social {
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            color: $primary;
+            text-shadow: none;
+            opacity: 1;
+            font-size: 2rem;
+        }
+
+        .modal {
+            &-dialog {
+                @include media-breakpoint-up(lg) {
+                    max-width: 825px;
+                }
+            }
+
+            &-content {
+                position: relative;
+                background: rgba(white, .15) 0% 0% no-repeat padding-box;
+                opacity: 1;
+                backdrop-filter: blur(30px);
+                -webkit-backdrop-filter: blur(30px);
+                padding: 4rem 2rem;
+
+                @include media-breakpoint-up(lg) {
+                    padding: 4rem;
+                }
+            }
+
+            &-body {
+                padding: 2rem 0;
+                white-space: nowrap;
+
+                @include media-breakpoint-up(lg) {
+                    padding: 4rem;
+                }
+
+                .line-v {
+                    display: block;
+                    width: 1px;
+                    height: 100%;
+                    background-color: $border-color;
+                }
+            }
+
+            &-icon {
+                display: block;
+                text-align: center;
+
+                img {
+                    width: 48px;
+
+                    @include media-breakpoint-up(lg) {
+                        width: 150px;
+                    }
+                }
+            }
+
+            &-info {
+                padding-left: 1rem;
+
+                @include media-breakpoint-up(lg) {
+                    font-size: 1.5rem;
+                    padding-left: 3rem;
+                }
+
+                .img-line {
+                    max-width: 100px;
+
+                    @include media-breakpoint-up(lg) {
+                        max-width: 100%;
+                    }
+                }
+            }
+
+            // &-icon {
+            //     padding-right: 1rem;
+            //     border-right: 1px solid $border-color;
+
+            //     @include media-breakpoint-up(lg) {
+            //         padding-right: 4rem;
+            //     }
+
+            //     img {
+            //         object-fit: contain;
+
+            //         @include media-breakpoint-up(lg) {
+            //             width: 175px;
+            //             height: 175px;
+            //         }
+            //     }
+            // }
+
+            // &-info {
+            //     padding-left: 1rem;
+
+            //     .img-line {
+            //         width: 80px;
+            //     }
+
+            //     @include media-breakpoint-up(lg) {
+            //         padding-left: 4rem;
+            //         font-size: 1.5rem;
+            //     }
+            // }
+        }
+    }
+}

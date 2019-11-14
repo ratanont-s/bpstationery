@@ -13,7 +13,7 @@ $(document).ready(function () {
   })
 
   var mySwiper = new Swiper('.swiper-container', {
-    // initialSlide: 6,
+    // initialSlide: 5,
     direction: 'vertical',
     mousewheel: true,
     keyboard: true,

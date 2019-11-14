@@ -70,6 +70,9 @@ header {
 
   .nav {
     &-collapse {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       position: fixed;
       top: 0;
       bottom: 0;
@@ -93,8 +96,39 @@ header {
         transform: translateX(-100%);
       }
     }
-    &-menu{
+
+    &-menu {
       flex-direction: column;
+    }
+
+    &-item {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+
+        @include media-breakpoint-up(lg) {
+          margin-bottom: 50px;
+        }
+      }
+    }
+
+    &-link {
+      color: white;
+      font-weight: 500;
+      font-size: 1.5rem;
+
+      span {
+        display: inline-block;
+      }
+
+      &-en {
+        font-family: $font-futura;
+        min-width: 110px;
+        border-right: 1px solid white;
+      }
+
+      &-th {
+        padding-left: 20px;
+      }
     }
   }
 }

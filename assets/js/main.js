@@ -13,7 +13,7 @@ $(document).ready(function () {
   })
 
   var mySwiper = new Swiper('.swiper-container', {
-    initialSlide: 6,
+    // initialSlide: 6,
     direction: 'vertical',
     mousewheel: true,
     keyboard: true,
@@ -25,11 +25,11 @@ $(document).ready(function () {
     },
     on: {
       slideChangeTransitionEnd: function () {
-        $('.swiper-slide').find('video').each(function() {      
+        $('.swiper-slide').find('video').each(function () {
           this.pause();
           this.currentTime = 0;
         });
-        $('.swiper-slide-active').find('video').each(function() {      
+        $('.swiper-slide-active').find('video').each(function () {
           this.play();
         });
       },

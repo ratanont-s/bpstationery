@@ -1,0 +1,39 @@
+.swiper {
+  &-container {
+    width: 100%;
+    height: 100vh;
+  }
+
+  &-slide {
+    video {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+
+      @include media-breakpoint-up(lg) {
+        height: 100%;
+        object-fit: fill;
+      }
+    }
+
+    .video {
+      &-mb {
+        @include media-breakpoint-up(lg) {
+          display: none;
+        }
+      }
+
+      &-dt {
+        @include media-breakpoint-down(md) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &-pagination-progressbar {
+    .swiper-pagination-progressbar-fill {
+      background: $primary;
+    }
+  }
+}

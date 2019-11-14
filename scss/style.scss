@@ -1,0 +1,14 @@
+@import url("https://use.typekit.net/zfg8scq.css");
+@import './variables';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import './header';
+@import './main';
+@import './landing';
+@import './footer';
+
+.container-fluid{
+  @include media-breakpoint-up(lg) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}

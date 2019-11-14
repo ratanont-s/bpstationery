@@ -1,0 +1,11 @@
+{
+  "name": "bp2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "swiper": "^5.2.0"
+  }
+}

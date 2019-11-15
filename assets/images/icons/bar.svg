@@ -1,1 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="31" height="20" viewBox="0 0 31 20"><g transform="translate(-264 -29)"><rect width="31" height="4" transform="translate(264 29)" fill="#50bd96"/><rect width="31" height="4" transform="translate(264 37)" fill="#50bd96"/><rect width="31" height="4" transform="translate(264 45)" fill="#50bd96"/></g></svg>
+<svg id="bar" xmlns="http://www.w3.org/2000/svg" width="31" height="20" viewBox="0 0 31 20">
+  <rect id="Rectangle_94" data-name="Rectangle 94" width="31" height="4" fill="#50bd96"/>
+  <rect id="Rectangle_94-2" data-name="Rectangle 94" width="31" height="4" transform="translate(0 8)" fill="#50bd96"/>
+  <rect id="Rectangle_94-3" data-name="Rectangle 94" width="31" height="4" transform="translate(0 16)" fill="#50bd96"/>
+</svg>

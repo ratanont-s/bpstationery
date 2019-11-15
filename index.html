@@ -14,47 +14,46 @@
 <body>
   <header>
     <div class="container-fluid">
-      <a href="./index.html" class="logo">
-        <img src="./assets/images/logo.svg" alt="BP Stationery">
-      </a>
       <button type="button" class="toggle" data-toggle="menu">
-        <span class="toggle-icon"></span>
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
       </button>
     </div>
     <div class="nav-collapse">
       <ul class="nav nav-menu">
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="#" id="slide1">
             <span class="nav-link-en">Home</span>
             <span class="nav-link-th">หน้าแรก</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="#" id="slide2">
             <span class="nav-link-en">About Us</span>
             <span class="nav-link-th">เกี่ยวกับเรา</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="#" id="slide3">
             <span class="nav-link-en">Clients</span>
             <span class="nav-link-th">ลูกค้า</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="#" id="slide4">
             <span class="nav-link-en">Services</span>
             <span class="nav-link-th">บริการ</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="#" id="slide5">
             <span class="nav-link-en">Products</span>
             <span class="nav-link-th">สินค้า</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="#" id="slide6">
             <span class="nav-link-en">Contact</span>
             <span class="nav-link-th">ติดต่อเรา</span>
           </a>
@@ -62,9 +61,9 @@
       </ul>
     </div>
   </header>
-  <main class="swiper-container">
+  <main class="swiper-container" id="main">
     <div class="swiper-wrapper">
-      <section class="swiper-slide" id="sec1">
+      <section class="swiper-slide" id="sec1" data-hash="slide1">
         <div class="bg-slide">
           <div class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
@@ -104,6 +103,13 @@
             </div>
           </div>
         </div>
+        <div class="logo">
+          <div class="container-fluid">
+            <a href="./index.html">
+              <img src="./assets/images/logo.svg" alt="BP Stationery">
+            </a>
+          </div>
+        </div>
         <div class="text">
           <div class="container-fluid">
             Onestop <br> Stationery <br> Supplies
@@ -124,12 +130,12 @@
               </li>
               <li>
                 <a href="mailto:bangplee.stationery.1@gmail.com">
-                  <img src="./assets/images/icons/mail.svg" alt="">
+                  <img src="./assets/images/icons/gmail.svg" alt="">
                 </a>
               </li>
               <li>
                 <a href="#phoneModal" data-toggle="modal">
-                  <img src="./assets/images/icons/phone.svg" alt="">
+                  <img src="./assets/images/icons/tel.svg" alt="">
                 </a>
               </li>
             </ul>
@@ -137,7 +143,7 @@
         </div>
 
       </section>
-      <section class="swiper-slide">
+      <section class="swiper-slide" id="sec2" data-hash="slide2">
         <video muted playsinline class="video-mb">
           <source src="./assets/videos/about-us-mb.mp4" type="video/mp4">
         </video>
@@ -145,7 +151,7 @@
           <source src="./assets/videos/about-us-dt.mp4" type="video/mp4">
         </video>
       </section>
-      <section class="swiper-slide">
+      <section class="swiper-slide" id="sec3" data-hash="slide3">
         <video muted playsinline class="video-mb">
           <source src="./assets/videos/partner-mb.mp4" type="video/mp4">
         </video>
@@ -153,7 +159,7 @@
           <source src="./assets/videos/partner-dt.mp4" type="video/mp4">
         </video>
       </section>
-      <section class="swiper-slide">
+      <section class="swiper-slide" id="sec4" data-hash="slide4">
         <video muted playsinline class="video-mb">
           <source src="./assets/videos/service-mb.mp4" type="video/mp4">
         </video>
@@ -161,18 +167,74 @@
           <source src="./assets/videos/service-dt.mp4" type="video/mp4">
         </video>
       </section>
-      <section class="swiper-slide">Slide 5</section>
-      <section class="swiper-slide" id="sec6">
+      <section class="swiper-slide" id="sec5" data-hash="slide5">
+        <div class="container-fluid">
+          <hr>
+          <div class="title">
+            <span class="title-bg"></span>
+            <span class="title-text">Product Line</span>
+          </div>
+          <div class="products">
+            <div class="slick slick-for">
+              <div class="slick-item">
+                <img src="./assets/images/slides/product/02.jpg" alt="">
+              </div>
+              <div class="slick-item">
+                <img src="./assets/images/slides/product/03.jpg" alt="">
+              </div>
+              <div class="slick-item">
+                <img src="./assets/images/slides/product/07.jpg" alt="">
+              </div>
+              <div class="slick-item">
+                <img src="./assets/images/slides/product/06.jpg" alt="">
+              </div>
+              <div class="slick-item">
+                <img src="./assets/images/slides/product/05.jpg" alt="">
+              </div>
+              <div class="slick-item">
+                <img src="./assets/images/slides/product/01.jpg" alt="">
+              </div>
+              <div class="slick-item">
+                <img src="./assets/images/slides/product/04.jpg" alt="">
+              </div>
+            </div>
+            <div class="slick slick-nav">
+              <div class="slick-item">
+                <span class="slick-text">กลุ่ม กระดาษ</span>
+              </div>
+              <div class="slick-item">
+                <span class="slick-text">กลุ่ม ELECTRONIC</span>
+              </div>
+              <div class="slick-item">
+                <span class="slick-text">กลุ่ม กระดาษทิชชู่</span>
+              </div>
+              <div class="slick-item">
+                <span class="slick-text">กลุ่ม เครื่องเขียน</span>
+              </div>
+              <div class="slick-item">
+                <span class="slick-text">กลุ่ม ผลิตภัณฑ์ทำความสะอาด</span>
+              </div>
+              <div class="slick-item">
+                <span class="slick-text">กลุ่ม เครื่องดื่ม</span>
+              </div>
+              <div class="slick-item">
+                <span class="slick-text">กลุ่ม เทป</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="swiper-slide" id="sec6" data-hash="slide6">
         <form class="form">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-12 col-lg-6 align-self-center">
+              <div class="col-12 col-lg-6">
                 <div class="section-content">
                   <div class="title">
                     <span class="title-bg"></span>
                     <span class="title-text">Contact</span>
                   </div>
-                  <form action="send.php" method="POST" class="form">
+                  <form>
                     <div class="form-group offset-3 offset-lg-0">
                       <h5><u>โปรดเลือกกลุ่มสินค้าที่สนใจ</u></h5>
                       <div class="form-check">
@@ -283,13 +345,13 @@
                 <ul>
                   <li>
                     <span class="icon">
-                      <i class="fas fa-map-marker-alt"></i>
+                      <img src="./assets/images/icons/pin.svg" alt="">
                     </span>
                     117/13 หมู่ 1 ถ.เทพารักษ์ อ.บางเสาธง ต.บางเสาธง <br> จ.สมุทรปราการ 10570
                   </li>
                   <li>
                     <span class="icon">
-                      <i class="fas fa-envelope"></i>
+                      <img src="./assets/images/icons/mail.svg" alt="">
                     </span>
                     <a href="mailto:">
                       marketing@bangpleestationery.com
@@ -297,7 +359,7 @@
                   </li>
                   <li>
                     <span class="icon">
-                      <i class="fas fa-phone-alt"></i>
+                      <img src="./assets/images/icons/phone.svg" alt="">
                     </span>
                     Phone 1 : 02-706-9748 / Phone 2 : 0813153035
                   </li>
@@ -345,24 +407,30 @@
               <div class="col-lg-auto">
                 <div class="row">
                   <div class="col-6 col-lg">
-                    <span class="icon">
-                      <i class="fas fa-map-marker-alt"></i>
-                    </span>
-                    <span>117/13 หมู่ 1 ถ.เทพารักษ์ อ.บางเสาธง ต.บางเสาธง จ.สมุทรปราการ 10570</span>
+                    <div class="footer-contact">
+                      <span class="icon">
+                        <img src="./assets/images/icons/pin.svg" alt="">
+                      </span>
+                      <span>117/13 หมู่ 1 ถ.เทพารักษ์ อ.บางเสาธง ต.บางเสาธง จ.สมุทรปราการ 10570</span>
+                    </div>
                   </div>
                   <div class="col-6 col-lg">
                     <div class="row">
                       <div class="col-lg">
-                        <span class="icon">
-                          <i class="fas fa-envelope"></i>
-                        </span>
-                        <span>marketing@bangpleestationery.com</span>
+                        <div class="footer-contact">
+                          <span class="icon">
+                            <img src="./assets/images/icons/mail.svg" alt="">
+                          </span>
+                          <span>marketing@bangpleestationery.com</span>
+                        </div>
                       </div>
                       <div class="col-lg">
-                        <span class="icon">
-                          <i class="fas fa-phone-alt"></i>
-                        </span>
-                        <span>Phone 1 : 02-706-9748 / Phone 2 : 0813153035</span>
+                        <div class="footer-contact">
+                          <span class="icon">
+                            <img src="./assets/images/icons/phone.svg" alt="">
+                          </span>
+                          <span>Phone 1 : 02-706-9748 / Phone 2 : 0813153035</span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -386,13 +454,13 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <i class="fas fa-times"></i>
+          <img src="./assets/images/icons/close.svg" alt="">
         </button>
         <div class="modal-body">
           <div class="row no-gutters">
             <div class="col-5 col-lg align-self-center">
               <span class="modal-icon">
-                <img src="./assets/images/icons/phone.svg" alt="">
+                <img src="./assets/images/icons/tel.svg" alt="">
               </span>
             </div>
             <div class="col-auto">
@@ -413,7 +481,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <i class="fas fa-times"></i>
+          <img src="./assets/images/icons/close.svg" alt="">
         </button>
         <div class="modal-body">
           <div class="row no-gutters">
@@ -442,7 +510,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
-  <script src="https://kit.fontawesome.com/990479688a.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>
 

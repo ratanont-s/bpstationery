@@ -6,8 +6,6 @@
     height: 100%;
     padding-top: 20px;
     padding-bottom: calc(30px + 50px);
-    background: rgba(black, .16) 0% 0% no-repeat padding-box;
-    backdrop-filter: blur(1px);
   }
 
   .middle {
@@ -84,6 +82,8 @@
       padding-top: 50px;
       padding-bottom: 50px;
       width: auto;
+      background: rgba(black, .16) 0% 0% no-repeat padding-box;
+      backdrop-filter: blur(1px);
     }
 
     .top {

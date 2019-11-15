@@ -454,17 +454,12 @@
 
   .form {
     background-color: #AFECD5;
-    padding-top: 20px;
 
     @include media-breakpoint-down(md) {
       height: 100%;
       display: flex;
       // align-items: center;
       font-size: 0.8rem;
-    }
-
-    @include media-breakpoint-up(lg) {
-      padding-top: 54px;
     }
 
     >.container-fluid {
@@ -474,9 +469,11 @@
     }
 
     .section-content {
+      padding-top: 20px;
       height: 100%;
 
       @include media-breakpoint-up(lg) {
+        padding-top: 50px;
         padding-right: 70px;
       }
     }

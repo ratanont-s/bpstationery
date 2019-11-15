@@ -59,7 +59,7 @@
 
   .scroll {
     position: absolute;
-    bottom: 20px;
+    bottom: calc(30px + 50px);
     left: 50%;
     transform: translateX(-50%);
     text-align: center;

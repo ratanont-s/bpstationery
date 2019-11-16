@@ -238,10 +238,11 @@
 }
 
 #sec5 {
-  padding-top: 10px;
 
-  @include media-breakpoint-up(lg) {
-    padding-top: 54px;
+  >.container-fluid {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 
   hr {
@@ -272,6 +273,7 @@
         border-radius: 100%;
         box-shadow: 0px 3px 6px rgba(black, .16);
       }
+
     }
 
     &-text {
@@ -285,8 +287,86 @@
       font-weight: 500;
       font-size: 17px;
     }
+  }
 
-    @include media-breakpoint-up(lg) {
+  .products {
+    max-width: 800px;
+  }
+
+  .slick {
+    &-for {
+      .slick {
+
+        &-arrow {
+          // border: 1px solid #000;
+          width: 12px;
+          height: 12px;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: contain;
+          z-index: 1;
+
+          &::before {
+            display: none;
+          }
+        }
+
+        &-prev {
+          left: 0;
+          background-image: url('../images/icons/arrow-prev.svg');
+        }
+
+        &-next {
+          right: 0;
+          background-image: url('../images/icons/arrow-next.svg');
+        }
+
+        &-item {
+          img {
+            width: 255px;
+            height: 170px;
+            object-fit: contain;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+
+    &-nav {
+      .slick {
+        &-track {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+
+
+        &-slide {
+          width: auto !important;
+          color: #ddd;
+
+          &.slick-current {
+            color: $primary;
+          }
+        }
+
+        &-item {
+          margin-top: 15px;
+        }
+
+        &-text {
+          font-size: 13px;
+          cursor: pointer;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .title {
       &-bg {
         width: 75px;
         height: 75px;
@@ -301,92 +381,48 @@
         font-size: 19px;
       }
     }
-  }
 
-  .products {
-    max-width: 802px;
-    margin: 0 auto;
-  }
-
-  .slick {
-    *:focus {
-      outline: none !important;
+    .products {
+      // margin: 0 auto;
+      // margin-top: -50px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
 
-    &-arrow {
-      width: unset;
-      height: unset;
-      z-index: 1;
+    .slick {
+      &-for {
+        .slick {
+          &-arrow {
+            width: 32px;
+            height: 32px;
+          }
 
-      &::before {
-        display: none;
-      }
-
-      @include media-breakpoint-up(lg) {
-        img {
-          width: 32px;
+          &-item {
+            img {
+              width: 100%;
+              height: 50vh;
+            }
+          }
         }
       }
-    }
 
-    &-prev {
-      left: 0;
-    }
-
-    &-next {
-      right: 0;
-    }
-
-    &-item {
-
-      img {
-        width: 100%;
-      }
-    }
-
-    &-for {
-
-      @include media-breakpoint-up(lg) {
-        margin-top: -70px;
-      }
-    }
-
-    &-nav {
-      max-width: 802px;
-      margin: 0 auto;
-
-      .slick {
-        &-track {
-          display: flex;
-          flex-direction: column;
-
-          @include media-breakpoint-up(lg) {
+      &-nav {
+        .slick {
+          &-track {
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: center;
-          }
-        }
-
-        &-slide {
-          color: #DDDDDD;
-          width: 100% !important;
-
-          @include media-breakpoint-up(lg) {
-            width: auto !important;
           }
 
-          &.slick-current {
-            color: $primary;
+          &-item {
+            margin-top: 0;
+            padding: 0 calc(25px / 2);
           }
-        }
 
-        &-text {
-          display: block;
-          text-align: center;
-          white-space: nowrap;
-          padding: 0 15px;
-          cursor: pointer;
-          @include font-size(22px);
+          &-text {
+            font-size: 22px;
+          }
         }
       }
     }
@@ -531,9 +567,8 @@
       &-item {
         img {
           width: 100%;
-          height: calc(100vh - 144px);
+          height: 600px;
           object-fit: cover;
-          min-height: 624px;
         }
       }
     }
@@ -541,10 +576,9 @@
 
   .footer {
     height: 100%;
-    display: flex;
-    align-items: center;
     color: $footer-color;
     padding: 20px 0;
+    font-size: 12px;
 
     a:not(:hover) {
       color: $footer-color;

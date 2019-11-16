@@ -17,19 +17,19 @@ $(document).ready(function () {
   });
 
   $("#sec5 .slick-for").slick({
-    asNavFor: '.slick-nav',
-    prevArrow: '<button type="button" class="slick-prev"><img src="./assets/images/icons/arrow-prev.svg" /></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="./assets/images/icons/arrow-next.svg" /></button>'
+    asNavFor: '#sec5 .slick-nav',
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"></button>'
   });
   $("#sec5 .slick-nav").slick({
     slidesToShow: 7,
-    asNavFor: '.slick-for',
+    asNavFor: '#sec5 .slick-for',
     focusOnSelect: true
   });
 
   var swiper = new Swiper('#main', {
     // initialSlide: 4,
-    hashNavigation: true,
+    // freeMode: true,
     direction: 'vertical',
     mousewheel: true,
     keyboard: true,
@@ -41,6 +41,7 @@ $(document).ready(function () {
     },
     on: {
       slideChangeTransitionEnd: function () {
+        console.log('dddd');
         $('.swiper-slide').find('video').each(function () {
           this.pause();
           this.currentTime = 0;
